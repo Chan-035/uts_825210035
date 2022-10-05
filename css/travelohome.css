@@ -1,0 +1,895 @@
+* {padding: 0px; margin: 0px}
+
+.container {
+	width: 1360px; margin: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background: white;
+}
+
+menu{
+	width: 100%;
+	margin: auto;
+	background: white;
+	position: sticky; z-index: 1;
+	top: 0;
+}
+
+.kiri img{
+	float : left;
+	padding : 10px;
+}
+
+nav ul li {
+	float: left; list-style: none;
+	margin-top: 20px;
+}
+
+nav ul li a{
+	margin-right: 30px; text-decoration: none;
+	padding: 3px 15px; color: black;
+}
+
+nav ul li ul{
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display:block;
+    background-color: white;
+    padding: 5px;	
+}
+
+nav{
+    height: 40px; line-height:40px;
+    padding-bottom: 38px;
+}
+
+
+nav ul li ul{
+	position : absolute;
+}
+
+nav ul li ul li{
+	float : none;
+	position : relative;
+}
+
+nav ul li a:hover{color : blue;}
+
+nav ul li:hover{background: white;}
+
+.kanan img {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left : 150px;
+}
+
+.kanan h4{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.sosmed img{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left: 10px;
+}
+
+.search1 img{
+	margin-left: 30px;
+	padding: 26px 37px 26px 37px;
+	background-color: red;
+	width: 28px;
+	height: 25px;
+}
+
+.picturebox {
+	background: #130f40;
+	position: relative;
+}
+
+.picturebox img{
+	width: 100%;
+	height : auto;
+}
+
+.picturebox h1 {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	color : white;
+	font-size: 70px;
+	font-family: Lucida Handwriting;
+}
+
+.picturebox p {
+	position: absolute;
+	bottom: 63%;
+	left: 27%;
+	color : white;
+	font-size: 40px;
+}
+
+.picturebox button{
+	position: absolute;
+	top: 40%;
+	left: 45%;
+    font-size: 20px;
+    color : white;
+	padding: 5px;
+	width : 150px;
+	height: 70px;
+	background-color: blue;
+	border-radius : 10%;
+	border : none;
+	cursor : pointer;
+	transition : opacity 0.5s , background-color 0.5s;
+}
+
+.picturebox button:hover{
+	background-color: red;
+	opacity : 0.8;
+}
+
+.InputData1 {
+	width: 100%; margin: auto;
+	height: 150px;
+	background-color: #130f40;
+}
+
+.InputData1 form {
+	margin-top:25px;
+	float: left;
+	margin-left: 5%;
+	
+}
+
+.InputData1 label{
+	display: inline-block;
+	line-height: 70px;
+	font-size : 25px;
+	color : white;
+	text-decoration: bold;
+}
+
+.InputData1 form input{
+	width: 200px;
+	padding: 10px;
+	background: #130f40;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	color: white; 
+	border-color: white;
+	border-radius: 7px; 
+	
+}
+
+.InputData1 select {
+	width: 200px; 
+	font-size: 20px;
+	line-height: 20px; 
+	margin-left: 10px;
+	padding: 10px; 
+	border-radius:4px;
+	background: #130f40; 
+	color: white;
+	border-color: white; border-size: 1px;
+}
+
+.InputData1 button{
+	width: 150px; font-size: 20px;
+	height: 50px; color: white;
+	background-color: #eb4d4b;
+	padding: 10px; 
+	font-weight: bold;
+	border-radius: 8px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition : background-color 1s;
+}
+
+.InputData1 button:hover{
+	background-color : #7ed6df;
+}
+
+
+.Destinasi{
+	width : 100%;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.Destinasi h1{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 40px;
+}
+
+.Destinasi p{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 17px;
+}
+
+.Wisata {
+	width : 100%;
+	float: left;
+}
+
+.kumpulandestinasi .foto img {
+	width : 350px; height: 200px;
+	margin-left: 30px;
+}
+
+.kumpulandestinasi .foto:hover img{
+	margin-top: 10px;
+}
+
+.kumpulandestinasi .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin: 15px;
+}
+
+
+.kumpulandestinasi .foto {position: relative;}
+
+.kumpulandestinasi .foto .nomor {
+	position: absolute;
+	width : 50px;
+	height: auto;
+	background-color: red;
+	border-radius: 25px;
+	text-align: center;
+	bottom : 25%;
+	left: 25%;
+	color: white; padding: 6px;
+}
+
+.kumpulandestinasi .foto p {
+	position: absolute;
+	width : 100px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	bottom : 25%;
+	left: 4%;
+	color: white; 
+}
+
+.kumpulandestinasi .foto:hover p {
+	position: absolute;
+	width : 100px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	bottom : 25%;
+	left: 4%;
+	color: red; 
+
+}
+
+.kumpulandestinasi .foto:hover .nomor{
+	background-color: blue;
+}
+
+
+.article2 .InputData2{
+	width: 100%; margin: auto;
+	height: 80px;
+	background-color: green;
+}
+
+.InputData2 {
+	width: 100%; margin: auto;
+	height: 140px;
+	background-color: #130f40;
+	margin-top:1000px;
+}
+
+.InputData2 form .kiri {
+	float: left;
+	margin-left: 5%;
+	
+}
+
+.InputData2 form .kanan {
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.InputData2 form{
+	margin-left: 200px;
+}
+
+.InputData2 h1{
+	display: inline-block;
+	line-height: 70px;
+	font-size : 25px;
+	color : white;
+	text-decoration: bold;
+	margin-left: 100px;
+}
+
+.InputData2 p{
+	font-size : 15px;
+	color : gray;
+	text-decoration: bold;
+	margin-left: 50px;
+}
+
+.InputData2 form input{
+	width: 200px;
+	padding: 10px;
+	background: #130f40;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	color: white; 
+	border-color: white;
+	border-radius: 7px; 
+	
+}
+
+.InputData2 button{
+	width: 150px; font-size: 20px;
+	height: 50px; color: white;
+	background-color: #eb4d4b;
+	padding: 10px; 
+	font-weight: bold;
+	border-radius: 8px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition : background-color 1s;
+}
+
+.InputData2 button:hover{
+	background-color : #7ed6df;
+}
+
+.popplace{
+	width : 100%;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.popplace h1{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 40px;
+}
+
+.popplace p{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 17px;
+}
+
+.kumpulanplace .foto img {
+	width : 350px; height: 200px;
+	margin-left: 30px;
+}
+
+.kumpulanplace .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin: 15px;
+	padding-bottom: 100px;
+}
+
+.kumpulanplace .foto {position: relative;}
+
+.kumpulanplace .foto .nomor {
+	position: absolute;
+	width : 50px;
+	height: 20px;
+	background-color: #31C6D4;
+	border-radius: 25px;
+	text-align: center;
+	top : 5%;
+	left: 15%;
+	color: white; padding: 6px;
+	transition : background-color 1s;
+}
+
+.kumpulanplace .foto:hover .nomor {
+	background-color: red;
+}
+
+.kumpulanplace .foto h2 {
+	position: absolute;
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: left;
+	margin-left: 12px;
+	color: blue; 
+	margin-top: 30px;
+}
+
+.kumpulanplace .foto:hover h2 {
+	color: red; 
+}
+
+.kumpulanplace p{
+	position: absolute;
+	width : 200px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	color: blue; 
+	margin-top: 70px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+.kumpulanplace .text{
+	background-color: #F9F9F9;
+	height: 150px;
+	margin-left: 32px;
+	width: 347px;
+	
+}
+
+.text .bintang {
+	color: gold;
+	margin-top : 100px;
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	float: left;
+}
+
+.kumpulanplace .text .bintang a {
+	color: black;
+}
+
+.place button{
+	margin-left: 620px;
+	margin-top: 50px;
+    font-size: 20px;
+    color : white;
+	padding: 5px;
+	width : 150px;
+	height: 60px;
+	background-color: red;
+	border-radius : 10%;
+	border : none;
+	cursor : pointer;
+	transition : opacity 0.5s , background-color 0.5s;
+	margin-bottom: 90px;
+}
+
+.place button:hover{
+	background-color: blue;
+}
+
+.kumpulanplace .jam {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	font-size : 15px;
+	color: black;
+	margin: 5px 0 0 90px;
+}
+
+.kumpulanplace .hari {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	font-size : 15px;
+	color: black;
+	margin-top: 5px;
+	margin-left: 110px;
+}
+
+.picturebox2 {
+	position: relative;
+}
+
+.picturebox2 img{
+	width: 100%;
+	height : 630px;
+}
+
+.picturebox2 h1 {
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	color : white;
+	font-size: 70px;
+	font-family: Lucida Handwriting;
+}
+
+.picturebox2 .enjoy img {
+	position: absolute;
+	border-radius: 50%;
+	left: 45%;
+	top: 40%;
+	width: 80px;
+	height: 80px;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play {
+  width: 100px;
+  height: 100px;
+  background: cornflowerblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px;
+  animation: animate 2s linear infinite;
+  cursor: pointer;
+}
+.play i {
+  color: #fff;
+  font-size: 50px;
+}
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 cornflowerblue;
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 26, 67, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+  }
+}
+
+.keunggulan .foto img {
+	width : 70px; height: 70px;
+	margin-left: 120px;
+}
+
+.keunggulan .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin-top: 150px;
+}
+
+.keunggulan{
+	float: left;
+	width: auto;
+	margin-left: 100px;
+	padding-bottom: 170px;
+}
+
+.keunggulan .foto {position: relative;}
+
+.keunggulan .foto p {
+	position: absolute;
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	color: gray; 
+	padding-left: 40px;
+}
+
+.keunggulan .foto h3 {
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	padding-left: 40px;
+}
+
+.quote {
+	width: 100%;
+	height: 120px;
+	display: grid;
+	place-items : center;
+}
+
+.quote img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.quote .quotation {
+	width : 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: gray;
+	color : white;
+	display : grid;
+	position: absolute;
+	font-size: 25px;
+	place-items: center;
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+.quote .teks {
+	width : 600px;
+	height: 100px;
+	text-align: center;
+	margin-top : 50px;
+}
+
+.quote .teks p {
+	font-size : 20px;
+}
+
+.quote .teks h5 {
+	margin-top: 10px;
+	font-size: 15px;
+	color: gray;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.recent{
+	padding-top: 300px;
+}
+
+.recent .trip h1{
+	font-size: 40px;
+	margin-left: 580px;
+}
+
+.trip{
+	margin-bottom: 100px;
+}
+
+.recenttrip{
+	float: left;
+	padding-left: 40px;
+	width: auto;
+}
+
+.kumpulanrecent{
+	margin-left: 100px;
+}
+
+.kumpulanrecent .foto img {
+	width : 350px; 
+	height: 200px;
+	border-radius: 5px;
+}
+
+.kumpulanrecent .foto {
+	width: 350px;
+	height: 250px;
+	float: left;
+	margin-left: 20px;
+	padding-bottom: 100px;
+}
+
+.kumpulanrecent .foto h1 {
+	position: absolute;
+	width : 310px;
+	height: auto;
+	border-radius: 100px;
+	text-align: left;
+	color: black; 
+	margin-top: 15px;
+	font-size: 25px;
+	transition : color 1s;
+}
+
+.kumpulanrecent .foto:hover h1 {
+	position: absolute;
+	width : 310px;
+	height: auto;
+	border-radius: 100px;
+	text-align: left;
+	color: red; 
+	margin-top: 15px;
+	font-size: 25px;
+}
+
+.kumpulanrecent p{
+	margin-top: 10px;
+}
+
+.isifoot{
+	margin-top: 100px;
+	height: 570px;
+	width:100%;
+	background-color: #130f40;
+	float: left;
+}
+
+.ftravelo{
+	width: 240px;
+	color: gray;
+	padding-top: 100px;
+	padding-left: 100px;
+	float: left;
+	padding-right: 50px;
+}
+
+.tratas{
+	padding-bottom: 50px;
+}
+
+.tratas img{
+	width: 170px;
+}
+
+.trtengah .text p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trtengah .link p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+	transition : color 1s;
+}
+
+.trtengah .link p:hover{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: red;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trbawah img{
+	
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left: 15px;
+}
+
+.company{
+	padding-top:110px;
+	margin-left: 50px;
+	padding-right: 30px;
+	float: left;
+}
+
+.company h1{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.company p{
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+}
+
+.fpopular{
+	padding-top:110px;
+	margin-left: 50px;
+	float: left;
+}
+
+.fpopular p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+}
+
+.fpopular .atas p{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.fpopular .bwhkiri{
+	float: left;
+	padding-right: 50px;
+}
+
+.fpopular .bwhkiri p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.fpopular .bwhkanan{
+	float: left;
+}
+
+.fpopular .bwhkanan p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.instagram{
+	padding-top:110px;
+	margin-left: 90px;
+	float: left;
+}
+
+.instagram p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+}
+
+.instagram .igatas p {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.instagram img{
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+
+footer .copy p{
+	position: relative;
+	color: white;
+	float: left;
+	margin-left: 140px;
+	margin-top: 120px;
+	padding-top: 20px;
+	padding-left: 250px;
+	padding-right: 250px;
+	border-top: 1px solid black;
+}
