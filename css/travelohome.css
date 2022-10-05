@@ -96,56 +96,138 @@ nav ul li:hover{background: white;}
 	height: 25px;
 }
 
-.picturebox {
-	background: #130f40;
-	position: relative;
+
+article .slider {
+	float: left;
+	position: relative; 
+	width: 100%; 
+	height: 700px; 
+	background-color:#130f40;
 }
 
-.picturebox img{
-	width: 100%;
-	height : auto;
+article .slider input {
+	display: none;
 }
 
-.picturebox h1 {
-	position: absolute;
-	top: 20%;
-	left: 35%;
-	color : white;
-	font-size: 70px;
-	font-family: Lucida Handwriting;
+article .backgroundfoto {
+	position: absolute; 
+	width: 100%; 
+	transition: opacity 0.8s; 
+	height: 700px; 
+	opacity: 0;
 }
 
-.picturebox p {
-	position: absolute;
-	bottom: 63%;
-	left: 27%;
-	color : white;
-	font-size: 40px;
+article .backgroundfoto img {
+	float: left; 
+	width: 100%; 
+	object-fit: cover; 
+	height: 700px;
 }
 
-.picturebox button{
-	position: absolute;
-	top: 40%;
-	left: 45%;
-    font-size: 20px;
-    color : white;
-	padding: 5px;
-	width : 150px;
-	height: 70px;
-	background-color: blue;
-	border-radius : 10%;
-	border : none;
-	cursor : pointer;
-	transition : opacity 0.5s , background-color 0.5s;
+article .backgroundfoto .kotak {
+	float: left; 
+	position: absolute; 
+	left: 50%; 
+	top: 20%; 
+	transform: translate(-50%, 0); 
+	width: 500px;
 }
 
-.picturebox button:hover{
-	background-color: red;
-	opacity : 0.8;
+
+
+article .backgroundfoto .kotak h1 {
+	float: left; 
+	position: relative; 
+	color: white; 
+	left: 50%; 
+	transform: translate(-50%, 0);
+	font-size: 200px; 
+	font-family: 'Brush Script MT', cursive; 
+	font-weight: normal; 
+	cursor: default;
 }
+
+article .backgroundfoto .kotak p {
+	float: left; 
+	position: relative; 
+	color: white;
+	font-size: 20px; 
+	font-family: sans-serif; 
+	cursor: default; 
+	left: 50%; 
+	transform: translate(-50%, 0); 
+	margin-top: -20px; 
+	margin-bottom: 50px;
+}
+
+article .slider button {
+	float: left; 
+	position: relative; 
+	width: 175px; 
+	font-family: sans-serif;
+	font-size: 15px; 
+	background-color: #ECB390; 
+	color: white; 
+	border-radius: 3px; 
+	border: none; 
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out; 
+	top: 63%; 
+	display: block; 
+	left: 50%; 
+	transform: translate(-50%, 0)
+}
+
+article .slider button:hover {
+	background-color: #94B49F
+}
+
+article .kekanan, .kekiri {
+	width: 80px; 
+	height: 120px; 
+	line-height: 120px; 
+	position: absolute; 
+	top: 50%; 
+	background: black; 
+	opacity: 48%;
+	font-size: 20px;
+	color: white; 
+	z-index: 1; 
+	transition: 0.45s;
+	cursor: pointer; 
+	text-align: center; 
+	transform: translate(0,-50%);
+}
+
+article .kekanan:hover {
+	background-color: #94B49F; 
+	color: black; opacity: 100%; 
+	transition: 0.3s;
+}
+
+article .kekiri:hover {
+	background-color: #94B49F; 
+	color: black; 
+	opacity: 100%; 
+	transition: 0.3s;
+}
+
+article .kekanan {
+	right: 0;
+}
+article .kekiri {
+	left: 0;
+}
+
+#indonesia:checked~#INA {opacity: 1;}
+#malaysia:checked~#MYS {opacity: 1;}
+#singapore:checked~#SGR {opacity: 1;}
 
 .InputData1 {
-	width: 100%; margin: auto;
+	padding-top: 720px;
+	width: 100%; 
+	margin: auto;
 	height: 150px;
 	background-color: #130f40;
 }
@@ -256,13 +338,13 @@ nav ul li:hover{background: white;}
 
 .kumpulandestinasi .foto .nomor {
 	position: absolute;
-	width : 50px;
+	width : 100px;
 	height: auto;
 	background-color: red;
 	border-radius: 25px;
 	text-align: center;
 	bottom : 25%;
-	left: 25%;
+	left: 30%;
 	color: white; padding: 6px;
 }
 
@@ -270,11 +352,13 @@ nav ul li:hover{background: white;}
 	position: absolute;
 	width : 100px;
 	height: auto;
+	font-size: 20px;
 	border-radius: 100px;
 	text-align: center;
-	bottom : 25%;
-	left: 4%;
-	color: white; 
+	bottom : 28%;
+	left: 6%;
+	color: white;
+    transition: color 1s , ease-in-out 0.5s;
 }
 
 .kumpulandestinasi .foto:hover p {
@@ -612,67 +696,117 @@ nav ul li:hover{background: white;}
 }
 
 .quote {
-	width: 100%;
-	height: 120px;
-	display: grid;
-	place-items : center;
+float: left; 
+width: 100%;
+height: auto;
+margin-top: 70px;
 }
 
-.quote img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+.quote .mid {
+width: 100%; 
+float: left; 
+position: relative; 
+height: 500px;
 }
 
-.quote .quotation {
-	width : 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: gray;
-	color : white;
-	display : grid;
-	position: absolute;
-	font-size: 25px;
-	place-items: center;
-	margin-top: 80px;
-	margin-left: 50px;
+.quote .mid .slideshow {
+float: left; 
+width: 1250px; 
+overflow: hidden; 
+position: absolute; 
+left: 50%; 
+transform: translate(-50%, 0);
 }
 
-.quote .teks {
-	width : 600px;
-	height: 100px;
-	text-align: center;
-	margin-top : 50px;
+.quote .mid .slideshow input {
+display: none;
 }
 
-.quote .teks p {
-	font-size : 20px;
+.quote .mid .slideshow .box {
+height: 500px; 
+float: left; 
+transition: all 0.5s ease;
 }
 
-.quote .teks h5 {
-	margin-top: 10px;
-	font-size: 15px;
-	color: gray;
+.quote .mid .slideshow .box .isi {
+width: 1250px; 
+padding-bottom: 135px; 
+float: left;
+margin-top: -25px;
 }
 
-.pagination {
-  display: inline-block;
+.quote .mid .slideshow .box .isi img {
+width: 140px;
+display: block; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 135px; 
 }
 
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
+.quote .mid .slideshow .box .isi h1 {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 30px;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 18px;
 }
 
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
+.quote .mid .slideshow .box .isi p {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 30px;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 15px;
+color: grey;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.quote .mid .slideshow .dots {
+display: flex; 
+margin: 5px; 
+position: absolute; 
+bottom: 12%; 
+left: 47%;
+}
+
+.quote .mid .slideshow .dots label {
+height: 12px; 
+width: 12px; 
+border-radius: 50%; 
+cursor: pointer; 
+margin: 5px;  
+transition: all 0.2s ease; 
+background-color: #18978F;
+}
+
+#micky:checked~ .box {
+margin-left: 0px;
+}
+
+#tom:checked~ .box {
+margin-left: -1250px;
+}
+
+#jerry:checked~ .box {
+margin-left: -2500px;
+}
+
+#micky:checked~ .dots label#satu {
+background-color: indianred; 
+}
+
+#tom:checked~ .dots label#dua {
+background-color: indianred; 
+}
+
+#jerry:checked~ .dots label#tiga {
+background-color: indianred; 
+}
 
 .recent{
 	padding-top: 300px;
@@ -882,14 +1016,29 @@ nav ul li:hover{background: white;}
 }
 
 
-footer .copy p{
+.copy {
 	position: absolute;
-	color: white;
-	float: left;
-	margin-left: 140px;
+	display: block;
+	width: 1000px;
 	margin-top: 520px;
-	padding-top: 20px;
-	padding-left: 250px;
-	padding-right: 250px;
-	border-top: 1px solid black;
+	margin-left: 160px;
+	border-top: 2px solid black;
+
+}
+
+.copy p {
+	color: white;
+	margin-top : 20px;
+	margin-left: 21%;
+	font-size: 18px;
+}
+
+.copy a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: red;
+}
+
+.copy i {
+	color: red;
 }

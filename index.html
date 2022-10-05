@@ -56,11 +56,41 @@
 			</menu>
   
 			<article>
-				<div class='picturebox'>
-					<img src="img/pemandangan1.jpg">
-					<h1 class='pictText1'>Indonesia</h1>
-					<p class='pictText1'>pixel perfect design with awesome content</p>
-					<button class='pictText1'> Explore </button>
+				<div class="slider">
+					<input type="radio" name="slide" id="indonesia" checked>
+					<input type="radio" name="slide" id="malaysia">
+					<input type="radio" name="slide" id="singapore">
+					<div class="backgroundfoto" id="INA">
+						<img src="img/pemandangan1.jpg">
+						<label class="kekiri" for="singapore"><</label>
+						<label class="kekanan" for="malaysia">></label>
+						<div class="kotak">
+							<h1>Indonesia</h1>
+							<p>Pixel perfect design with awesome contents</p>
+						</div>
+					</div>
+					
+					<div class="backgroundfoto" id="MYS">
+						<img src="img/pemandanganmys.jpg">
+						<label class="kekiri" for="indonesia"><</label>
+						<label class="kekanan" for="singapore">></label>
+						<div class="kotak">
+							<h1>Malaysia</h1>
+							<p>Pixel perfect design with awesome contents</p>
+						</div>
+					</div>
+					
+					<div class="backgroundfoto" id="SGR">
+						<img src="img/pemandangansgr.jpg">
+						<label class="kekiri" for="malaysia"><</label>
+						<label class="kekanan" for="indonesia">></label>
+						<div class="kotak">
+							<h1>Singapore</h1>
+							<p>Pixel perfect design with awesome contents</p>
+						</div>
+					</div>
+					
+					<button><b>Explore Now</b></button>
 				</div>
 				
 				<div class='InputData1'>
@@ -89,7 +119,7 @@
 								<img src='img/italy1.jpg'>
 							</a>
 							<p> Italy </p>
-							<div class='nomor'> <div class='a'> 1 </div></div>
+							<div class='nomor'> <div class='a'> 07 Places </div></div>
 						</div>
 					 
 						<div class='foto'>
@@ -97,7 +127,7 @@
 								<img src='img/brail1.jpg'>
 							</a>
 							<p> Brazil </p>
-							<div class='nomor'> <div class='a'> 2 </div></div>
+							<div class='nomor'> <div class='a'> 03 Places</div></div>
 						</div>
 					 
 						<div class='foto'>
@@ -105,7 +135,7 @@
 								<img src='img/america1.jpg'>
 							</a>
 							<p> America </p>
-							<div class='nomor'> <div class='a'> 3 </div></div>
+							<div class='nomor'> <div class='a'> 10 Places</div></div>
 						</div>
 					 
 						<div class='foto'>
@@ -113,7 +143,7 @@
 								<img src='img/nepal1.jpg'>
 							</a>
 							<p> Nepal </p>
-							<div class='nomor'> <div class='a'> 4 </div></div>
+							<div class='nomor'> <div class='a'> 06 Places</div></div>
 						</div>
 					 
 						<div class='foto'>
@@ -121,7 +151,7 @@
 								<img src='img/maldive1.jpg'>
 							</a>
 							<p> Maldive </p>
-							<div class='nomor'> <div class='a'> 5 </div></div>
+							<div class='nomor'> <div class='a'> 09 Places</div></div>
 						</div>
 					 
 						<div class='foto'>
@@ -129,7 +159,7 @@
 								<img src='img/indonesia1.jpg'>
 							</a>
 							<p> Indonesia </p>
-							<div class='nomor'> <div class='a'> 6 </div></div>
+							<div class='nomor'> <div class='a'> 04 Places</div></div>
 						</div>
 					</div>
 				</div>
@@ -274,18 +304,37 @@
 						</div>
 					</div>
 					
-					<div class="quote"> 
-						<img src="img/author.png">
-						<span class="quotation"><i class="fa-solid fa-quote-right"></i> </span>
-						<div class="teks">
-							<p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-							<h5>- Mickey Mouse<h5>
-							<div class="pagination">
-								<a href="#">&laquo;</a>
-								<a href="#">1</a>
-								<a href="#" class="active">2</a>
-								<a href="#">3</a>
-								<a href="#">&raquo;</a>
+					<div class="quote">
+						<div class="mid">
+							<div class="slideshow">
+								<input type="radio" name="slide2" id="micky" checked>
+								<input type="radio" name="slide2" id="tom">
+								<input type="radio" name="slide2" id="jerry">
+								<div class="box">
+									<div class="isi">
+										<img src="img/author3.jpg">
+										<h1>"Working in conjunction with humanitarian aid agencies, we have supported<br><br>programmes to help alleviate human suffering."</h1>
+										<p>- Micky Mouse</p>
+									</div>
+
+									<div class="isi">
+										<img src="img/author3.jpg">
+										<h1>"Working in conjunction with humanitarian aid agencies, we have supported<br><br>programmes to help alleviate human suffering."</h1>
+										<p>- Tom Mouse</p>
+									</div>
+
+									<div class="isi">
+										<img src="img/author3.jpg">
+										<h1>"Working in conjunction with humanitarian aid agencies, we have supported<br><br>programmes to help alleviate human suffering."</h1>
+										<p>- Jerry Mouse</p>                
+									</div>
+								</div>
+
+								<div class="dots">
+									<label id="satu" for="micky"></label>
+									<label id="dua" for="tom"></label>
+									<label id="tiga" for="jerry"></label>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -381,9 +430,9 @@
 				</div>
 				
 				<div class='igbawah1'>
-					<a href="#"><img src="img/saint.jpg"></a>
-					<a href="#"><img src="img/california.jpg"></a>
-					<a href="#"><img src="img/miami.jpg"></a>
+					<a href="#"><img src="img/footer1.jpg"></a>
+					<a href="#"><img src="img/footer2.jpg"></a>
+					<a href="#"><img src="img/footer3.jpg"></a>
 				</div>
 				
 				<div class='igbawah2'>
@@ -393,8 +442,8 @@
 				</div>
 			</div>
 			
-			<div class='copy'>
-				<p>Copyright ©2022 All rights reserved | This template is made with  by<a href="#">Colorlib</a></p>
+			<div class ="copy"> 
+			  <p>Copyright ©2022 All rights reserved | This template is made with  <i class="fa-regular fa-heart"></i> by<a href="#">Colorlib</a></p>
 			</div>
 		</div>
 		
